@@ -2,6 +2,7 @@ package com.example.mipt1labaratorinisd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -17,10 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.tvMain = findViewById(R.id.tvMain);
+
     }
 
     public void onBtnChangeTextClick(View view) {
         this.tvMain.setText("Text was changed");
 
+    }
+
+    public void onBtnChangeTextColor(View view) {
+        this.tvMain.setTextColor(Color.RED);
     }
 }
